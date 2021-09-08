@@ -68,11 +68,6 @@ const prepareResult = result => {
     setTimeout(() => modalResult.style.display = 'block', 2000);
 };
 
-// const closeModal = () => {
-//     modalResult.style.display = 'none';
-//     location.reload();
-// };
-
 const closeModal = () => {
     modalResult.style.display = 'none';
     for(let i = 0; i < boxes.length; i++) {
