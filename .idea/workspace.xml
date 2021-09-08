@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bbcad14-24ad-448e-84c2-574cee8a09d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ToDoList/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToDoList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
       <updated>1631128792346</updated>
       <workItem from="1631128795057" duration="13000" />
       <workItem from="1631129046186" duration="265000" />
+      <workItem from="1631129468280" duration="174000" />
     </task>
     <servers />
   </component>
@@ -51,5 +54,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
