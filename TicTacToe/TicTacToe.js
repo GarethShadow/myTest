@@ -42,14 +42,14 @@ const check = () => {
     ];
     for (let i = 0; i < arr.length; i++) {
         if (
-            boxes[arr[i][0]].innerHTML == 'X' && boxes[arr[i][1]].innerHTML == 'X' && boxes[arr[i][2]].innerHTML == 'X'
+            boxes[arr[i][0]].innerHTML === 'X' && boxes[arr[i][1]].innerHTML === 'X' && boxes[arr[i][2]].innerHTML === 'X'
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             victories.innerHTML = ++counterVictories;
             result = 'Win the crosses, noughts walk';
             prepareResult(result);
         } else if (
-            boxes[arr[i][0]].innerHTML == 'O' && boxes[arr[i][1]].innerHTML == 'O' && boxes[arr[i][2]].innerHTML == 'O'
+            boxes[arr[i][0]].innerHTML === 'O' && boxes[arr[i][1]].innerHTML === 'O' && boxes[arr[i][2]].innerHTML === 'O'
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             defeats.innerHTML = ++counterDefeats;
