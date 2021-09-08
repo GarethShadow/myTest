@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ToDoList/toDoList.style.css">
+    <link rel="stylesheet" href="Header/header.css">
+    <link rel="stylesheet" href="TicTacToe/TicTacToe.style.css">
+</head>
+<body>
+<div class="full__cotainer">
+    <header class="header">
+        <div class="header__full">
+            <div class="header__logo"><a href="">MyProject</a></div>
+            <div class="header__right-block">
+                <div class="header__menu">
+                    <button class="button__menu">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+                             viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">  <image
+                                id="image0" width="18" height="18" x="0" y="0"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                            AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+                            cwAACxMAAAsTAQCanBgAAAAHdElNRQflBRoSGw4sNYmZAAAAp0lEQVQoz72RwQ2DMAxFXxADsEHJ
+                            BmzQMAkwQVdoN+gGTScp3YANHDZgAtxDEs45oH5fvvQs2d8maCxxID769QXiMoGKAp3XVGuf3AI8
+                            1QNoAJaDlMmsr2j2hw0yVleA/Wu9dNUtkstU65ja3wScDmlRT3OQ6cR0xkejGzAbjTsBIZPSdOLy
+                            newmLS0Am12koYvAzrX5pHE9M3czABjPRJcJ5s8PLtIPTfBINvX+9aIAAAAldEVYdGRhdGU6Y3Jl
+                            YXRlADIwMjEtMDUtMjZUMTg6Mjc6MTQrMDM6MDD1f21rAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIx
+                            LTA1LTI2VDE4OjI3OjE0KzAzOjAwhCLV1wAAAABJRU5ErkJggg=="/>
+                            </svg>
+                        Menu
+                    </button>
+                    <div class="dropdown__menu-content">
+                        <a href="">To do list</a>
+                        <a href="">Banner</a>
+                        <a href="">Tic tac toe</a>
+                        <a href="">Sea fight</a>
+                        <a href="">About</a>
+                    </div>
+                </div>
+
+
+                <div class="header__log-in">
+                    <button class="header__log-in--button">
+                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8.5 3.49804C8.5 5.15396 7.157 6.49609 5.5 6.49609C3.843 6.49609 2.5 5.15396 2.5 3.49804C2.5 1.84212 3.843 0.5 5.5 0.5C7.157 0.5 8.5 1.84212 8.5 3.49804Z"
+                                  stroke="#333333" stroke-linecap="square"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.5 14.4909H0.5C0.5 13.7808 0.5 13.1053 0.5 12.4936C0.5 10.8368 1.84315 9.49414 3.5 9.49414H7.5C9.15685 9.49414 10.5 10.8368 10.5 12.4936C10.5 13.1053 10.5 13.7808 10.5 14.4909Z"
+                                  stroke="#333333" stroke-linecap="square"
+                            />
+                        </svg>
+                        Log in
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__log-in--content">
+            <div class="log-in__content--information">
+                <div class="log-in__content--header">
+                    <h3>Log in</h3>
+                    <button class="modal__log-in--close"></button>
+                </div>
+                <div class="log-in__content--block log-in__validation_type_error">
+                    <fieldset class="border">
+                        <div class="form__row">
+                            <label for="auth_email" class="log-in__from-label">Username or e-mail address</label>
+                            <input text="Enter username or e-mail" type="email">
+                            <p class="log-in__error-message">Sorry, unrecognized username or e-mail</p>
+                        </div>
+                        <div class="form__row form__row-password">
+                            <label for="auth_email" class="log-in__from-label">Password</label>
+                            <input text="Enter username or e-mail" type="password">
+                        </div>
+                        <div class="form-row form-row__save-me">
+                            <div>
+                                <input class="custom--checkbox" id="remember__me" type="checkbox">
+                                <label for="remember__me">Save me</label>
+                            </div>
+                            <a class="form__row--link-style" href="">Restore password</a>
+                        </div>
+                        <div class="form__row form__row--button">
+                            <button class="button__log-in">Login</button>
+                            <a class="form__row--link-style" href="">Registration</a>
+                        </div>
+                    </fieldset>
+                    <div class="authorization-modal__social">
+                        <div class="authorization-modal__social--button">
+
+                            <p class="aothorization-modal__social--button">Login as user</p>
+                            <div class="aothorization-modal--button-section">
+                                <button class="aothorization-modal--button">Facebook</button>
+                                <button class="aothorization-modal--button">Google</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="todolis__section">
+            <h1>To Do List</h1>
+            <div class="todolist__content">
+                <div class="todo__add--wrapper">
+                    <div class="todo__add--input-wrapper">
+                        <input type="text" id="description-task">
+                    </div>
+                    <div class="todo__add--button-wrapper">
+                        <button id="todo-add-btn-tast">ADD</button>
+                    </div>
+                </div>
+                <div class="todo__assigned-tasks--wrapper">
+                    <h2>Tasks:</h2>
+                    <div class="todos__tasks--wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tic-tac-toe__section">
+        <h1>Tic-Tack-Toe</h1>
+        <div class="counter">
+            <p class="counter__text">victories at the crosses: <span class="counter__win-crosses">0</span></p>
+            <p class="counter__text">victories at the noughts: <span class="counter__win-noughts">0</span></p>
+        </div>
+        <div class="area-wrapper">
+            <div id="area">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div id="modal__result--wrapper">
+            <div id="overlay">
+                <div id="modal__window">
+                    <div id="content">Text</div>
+                    <div id="btn-close">Start new game</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="Header/header.js"></script>
+<script src="ToDoList/ToDoList.js"></script>
+<script src="TicTacToe/TicTacToe.js"></script>
+</html>
