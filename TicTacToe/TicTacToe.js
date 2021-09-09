@@ -3,6 +3,7 @@ const contentWrapper = document.getElementById('content');
 const modalResult = document.getElementById('modal__result--wrapper');
 const overlay = document.getElementById('overlay');
 const btnClose = document.getElementById('btn-close');
+const btnNewGame = document.getElementById('btn__new-game');
 const boxes = document.querySelectorAll('.box');
 let victories = document.querySelector('.counter__win-crosses');
 let defeats = document.querySelector('.counter__win-noughts');
@@ -65,7 +66,7 @@ const check = () => {
 
 const prepareResult = result => {
     contentWrapper.innerHTML = `${result}!`;
-    setTimeout(() => modalResult.style.display = 'block', 2000);
+    setTimeout(() => modalResult.style.display = 'block', 1000);
 };
 
 const closeModal = () => {
@@ -79,3 +80,4 @@ const closeModal = () => {
 
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
+btnNewGame.addEventListener('click', closeModal);

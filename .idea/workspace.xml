@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bbcad14-24ad-448e-84c2-574cee8a09d2" name="Changes" comment="my first commit on a branch">
+    <list default="true" id="0bbcad14-24ad-448e-84c2-574cee8a09d2" name="Changes" comment="checkout move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/TicTacToe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToe/TicTacToe.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/TicTacToe.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
       <workItem from="1631129046186" duration="265000" />
       <workItem from="1631129468280" duration="349000" />
       <workItem from="1631129915408" duration="616000" />
-      <workItem from="1631173046606" duration="1953000" />
+      <workItem from="1631173046606" duration="2957000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit on a branch">
       <created>1631131255394</created>
@@ -49,7 +51,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631131255394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="checkout move">
+      <created>1631176647986</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631176647986</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my first commit on a branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="my first commit on a branch" />
+    <MESSAGE value="checkout move" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkout move" />
   </component>
 </project>

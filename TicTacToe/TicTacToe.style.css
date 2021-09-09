@@ -104,3 +104,11 @@
 .counter__win-crosses, .counter__win-noughts {
     font-weight: bold;
 }
+
+#btn__new-game {
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
