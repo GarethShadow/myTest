@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bbcad14-24ad-448e-84c2-574cee8a09d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/TicTacToe.js" afterDir="false" />
-    </list>
+    <list default="true" id="0bbcad14-24ad-448e-84c2-574cee8a09d2" name="Changes" comment="my first commit on a branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +35,14 @@
       <workItem from="1631129468280" duration="349000" />
       <workItem from="1631129915408" duration="616000" />
     </task>
+    <task id="LOCAL-00001" summary="my first commit on a branch">
+      <created>1631131255394</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631131255394</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +76,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="my first commit on a branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="my first commit on a branch" />
   </component>
 </project>
