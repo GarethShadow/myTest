@@ -11,19 +11,15 @@ let defeats = document.querySelector('.counter__win-noughts');
 let counterVictories = counterDefeats = 0;
 let move = 0;
 let result = '';
-let box = document.querySelectorAll('.box');
 
 area.addEventListener('click', event => {
     if (event.target.className == 'box') {
         move % 2 === 0 ? event.target.innerHTML = 'X' : event.target.innerHTML = 'O';
         move++;
+
         event.target.innerHTML === 'X' ? event.target.style.color = 'green' : event.target.style.color = 'red';
         check();
-        // if (event.target.innerHTML !== '') {
-        //
-        // }
     }
-
 });
 
 const emptyBoxes = () => {
