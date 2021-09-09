@@ -11,6 +11,7 @@ let defeats = document.querySelector('.counter__win-noughts');
 let counterVictories = counterDefeats = 0;
 let move = 0;
 let result = '';
+let box = document.querySelectorAll('.box');
 
 area.addEventListener('click', event => {
     if (event.target.className == 'box') {
@@ -18,7 +19,11 @@ area.addEventListener('click', event => {
         move++;
         event.target.innerHTML === 'X' ? event.target.style.color = 'green' : event.target.style.color = 'red';
         check();
+        // if (event.target.innerHTML !== '') {
+        //
+        // }
     }
+
 });
 
 const emptyBoxes = () => {
@@ -72,7 +77,7 @@ const prepareResult = result => {
 
 const closeModal = () => {
     modalResult.style.display = 'none';
-    for(let i = 0; i < boxes.length; i++) {
+    for (let i = 0; i < boxes.length; i++) {
         boxes[i].innerHTML = '';
         boxes[i].style.background = 'none';
     }
@@ -82,7 +87,6 @@ const closeModal = () => {
 const cleanCounterBtn = () => {
     victories.innerHTML = counterVictories = 0;
     defeats.innerHTML = counterDefeats = 0;
-    // location.reload();
 }
 
 overlay.addEventListener('click', closeModal);
