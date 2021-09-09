@@ -74,6 +74,7 @@ const closeModal = () => {
         boxes[i].innerHTML = '';
         boxes[i].style.background = 'none';
     }
+    move = 0;
 };
 
 overlay.addEventListener('click', closeModal);
