@@ -4,6 +4,7 @@ const modalResult = document.getElementById('modal__result--wrapper');
 const overlay = document.getElementById('overlay');
 const btnClose = document.getElementById('btn-close');
 const btnNewGame = document.getElementById('btn__new-game');
+const btnClear = document.getElementById('btn__clear-counter');
 const boxes = document.querySelectorAll('.box');
 let victories = document.querySelector('.counter__win-crosses');
 let defeats = document.querySelector('.counter__win-noughts');
@@ -47,14 +48,14 @@ const check = () => {
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             victories.innerHTML = ++counterVictories;
-            result = 'Win the crosses, noughts walk';
+            result = 'Win the crosses';
             prepareResult(result);
         } else if (
             boxes[arr[i][0]].innerHTML === 'O' && boxes[arr[i][1]].innerHTML === 'O' && boxes[arr[i][2]].innerHTML === 'O'
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             defeats.innerHTML = ++counterDefeats;
-            result = 'Win the noughts, crosses walk';
+            result = 'Win the noughts';
             prepareResult(result);
         } else if (emptyBoxes().length === 0) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
@@ -78,6 +79,13 @@ const closeModal = () => {
     move = 0;
 };
 
+const cleanCounterBtn = () => {
+    victories.innerHTML = counterVictories = 0;
+    defeats.innerHTML = counterDefeats = 0;
+    // location.reload();
+}
+
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
 btnNewGame.addEventListener('click', closeModal);
+btnClear.addEventListener('click', cleanCounterBtn);
