@@ -1,28 +1,33 @@
-.tab-bar {
+.tab-bar__nav {
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #F3F3F3;
 }
 
-.tab-bar__link {
-    background-color: inherit;
+.tab-bar__nav-btn {
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 10px 12px;
     transition: 0.3s;
+    background: none;
     font-weight: bold;
 }
 
-.tab-bar__link:hover {
-    background: #ca5745;
+.tab-bar__nav-btn:hover {
+    background: #d3533f;
     color: white;
 }
 
-.tab-bar__link:active {
+.tab-bar__nav-btn.active {
     background: #CD4631;
+    color: white;
 }
 
-.tab-bar__content {
+.tab-bar__item {
     display: none;
+}
+
+.tab-bar__item.active {
+    display: block;
 }
