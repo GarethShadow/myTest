@@ -85,8 +85,6 @@ const cleanCounterBtn = () => {
     defeats.innerHTML = counterDefeats = 0;
 }
 
-cons
-
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
 btnNewGame.addEventListener('click', closeModal);
