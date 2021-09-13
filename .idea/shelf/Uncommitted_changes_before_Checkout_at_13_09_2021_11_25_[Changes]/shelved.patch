@@ -1,0 +1,19 @@
+Index: TicTacToe/TicTacToe.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const area = document.getElementById('area');\r\nconst contentWrapper = document.getElementById('content');\r\nconst modalResult = document.getElementById('modal__result--wrapper');\r\nconst overlay = document.getElementById('overlay');\r\nconst btnClose = document.getElementById('btn-close');\r\nconst boxes = document.querySelectorAll('.box');\r\nlet victories = document.querySelector('.counter__win-crosses');\r\nlet defeats = document.querySelector('.counter__win-noughts');\r\nlet counterVictories = counterDefeats = 0;\r\nlet move = 0;\r\nlet result = '';\r\n\r\narea.addEventListener('click', event => {\r\n    if (event.target.className == 'box') {\r\n        move % 2 === 0 ? event.target.innerHTML = 'X' : event.target.innerHTML = 'O';\r\n        move++;\r\n        event.target.innerHTML === 'X' ? event.target.style.color = 'green' : event.target.style.color = 'red';\r\n        check();\r\n    }\r\n});\r\n\r\nconst emptyBoxes = () => {\r\n    let emptyArr = [];\r\n    for (let i = 0; i < boxes.length; i++) {\r\n        if (boxes[i].innerHTML == '') {\r\n            emptyArr.push(i);\r\n        }\r\n    }\r\n    return emptyArr;\r\n};\r\n\r\nconst check = () => {\r\n    const arr = [\r\n        [0, 1, 2],\r\n        [3, 4, 5],\r\n        [6, 7, 8],\r\n        [0, 3, 6],\r\n        [1, 4, 7],\r\n        [2, 5, 8],\r\n        [0, 4, 8],\r\n        [2, 4, 6]\r\n    ];\r\n    for (let i = 0; i < arr.length; i++) {\r\n        if (\r\n            boxes[arr[i][0]].innerHTML === 'X' && boxes[arr[i][1]].innerHTML === 'X' && boxes[arr[i][2]].innerHTML === 'X'\r\n        ) {\r\n            boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';\r\n            victories.innerHTML = ++counterVictories;\r\n            result = 'Win the crosses';\r\n            prepareResult(result);\r\n        } else if (\r\n            boxes[arr[i][0]].innerHTML === 'O' && boxes[arr[i][1]].innerHTML === 'O' && boxes[arr[i][2]].innerHTML === 'O'\r\n        ) {\r\n            boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';\r\n            defeats.innerHTML = ++counterDefeats;\r\n            result = 'Win the noughts';\r\n            prepareResult(result);\r\n        } else if (emptyBoxes().length === 0) {\r\n            boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';\r\n            result = 'Draw';\r\n            prepareResult(result);\r\n        }\r\n    }\r\n};\r\n\r\nconst prepareResult = result => {\r\n    contentWrapper.innerHTML = `${result}!`;\r\n    setTimeout(() => modalResult.style.display = 'block', 2000);\r\n};\r\n\r\n// const closeModal = () => {\r\n//     modalResult.style.display = 'none';\r\n//     location.reload();\r\n// };\r\n\r\nconst closeModal = () => {\r\n    modalResult.style.display = 'none';\r\n    for(let i = 0; i < boxes.length; i++) {\r\n        boxes[i].innerHTML = '';\r\n        boxes[i].style.background = 'none';\r\n    }\r\n    move = 0;\r\n};\r\n\r\noverlay.addEventListener('click', closeModal);\r\nbtnClose.addEventListener('click', closeModal);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTacToe/TicTacToe.js b/TicTacToe/TicTacToe.js
+--- a/TicTacToe/TicTacToe.js	(revision d507a8397aab222cfed7028bc6ace3c7840960f7)
++++ b/TicTacToe/TicTacToe.js	(date 1631521503756)
+@@ -82,5 +82,7 @@
+     move = 0;
+ };
+ 
++cons
++
+ overlay.addEventListener('click', closeModal);
+ btnClose.addEventListener('click', closeModal);
+\ No newline at end of file
