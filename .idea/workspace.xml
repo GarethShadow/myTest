@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b9f669f-0df9-44b6-928f-3406b5988c6c" name="Changes" comment="dasdasd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TabBar/TabBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/TabBar/TabBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631522754586</updated>
-      <workItem from="1631522757586" duration="8009000" />
+      <workItem from="1631522757586" duration="8536000" />
     </task>
     <task id="LOCAL-00001" summary="dasdasd">
       <created>1631524100504</created>
@@ -72,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631531470216</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dasdasd">
+      <created>1631531736986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631531736986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
