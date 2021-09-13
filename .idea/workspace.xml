@@ -33,10 +33,37 @@
       <updated>1631535386314</updated>
       <workItem from="1631535388541" duration="202000" />
       <workItem from="1631535618708" duration="664000" />
+      <workItem from="1631536313466" duration="221000" />
+      <workItem from="1631536573822" duration="27000" />
+      <workItem from="1631536811893" duration="130000" />
     </task>
+    <task id="LOCAL-00001" summary="asdad">
+      <created>1631536513626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631536513626</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdad" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdad" />
   </component>
 </project>
