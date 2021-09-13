@@ -3,6 +3,8 @@ const contentWrapper = document.getElementById('content');
 const modalResult = document.getElementById('modal__result--wrapper');
 const overlay = document.getElementById('overlay');
 const btnClose = document.getElementById('btn-close');
+const btnNewGame = document.getElementById('btn__new-game');
+const btnClear = document.getElementById('btn__clear-counter');
 const boxes = document.querySelectorAll('.box');
 let victories = document.querySelector('.counter__win-crosses');
 let defeats = document.querySelector('.counter__win-noughts');
@@ -14,6 +16,7 @@ area.addEventListener('click', event => {
     if (event.target.className == 'box') {
         move % 2 === 0 ? event.target.innerHTML = 'X' : event.target.innerHTML = 'O';
         move++;
+
         event.target.innerHTML === 'X' ? event.target.style.color = 'green' : event.target.style.color = 'red';
         check();
     }
@@ -46,14 +49,14 @@ const check = () => {
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             victories.innerHTML = ++counterVictories;
-            result = 'Win the crosses, noughts walk';
+            result = 'Win the crosses';
             prepareResult(result);
         } else if (
             boxes[arr[i][0]].innerHTML === 'O' && boxes[arr[i][1]].innerHTML === 'O' && boxes[arr[i][2]].innerHTML === 'O'
         ) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
             defeats.innerHTML = ++counterDefeats;
-            result = 'Win the noughts, crosses walk';
+            result = 'Win the noughts';
             prepareResult(result);
         } else if (emptyBoxes().length === 0) {
             boxes[arr[i][0]].style.backgroundColor = boxes[arr[i][1]].style.backgroundColor = boxes[arr[i][2]].style.backgroundColor = '#00000033';
@@ -65,21 +68,24 @@ const check = () => {
 
 const prepareResult = result => {
     contentWrapper.innerHTML = `${result}!`;
-    setTimeout(() => modalResult.style.display = 'block', 2000);
+    setTimeout(() => modalResult.style.display = 'block', 1000);
 };
-
-// const closeModal = () => {
-//     modalResult.style.display = 'none';
-//     location.reload();
-// };
 
 const closeModal = () => {
     modalResult.style.display = 'none';
-    for(let i = 0; i < boxes.length; i++) {
+    for (let i = 0; i < boxes.length; i++) {
         boxes[i].innerHTML = '';
         boxes[i].style.background = 'none';
     }
+    move = 0;
 };
+
+const cleanCounterBtn = () => {
+    victories.innerHTML = counterVictories = 0;
+    defeats.innerHTML = counterDefeats = 0;
+}
 
 overlay.addEventListener('click', closeModal);
 btnClose.addEventListener('click', closeModal);
+btnNewGame.addEventListener('click', closeModal);
+btnClear.addEventListener('click', cleanCounterBtn);
