@@ -1,0 +1,64 @@
+.accordion__section h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.accordion__section {
+    padding: 30px 0px;
+    min-height: 100vh;
+}
+
+.accordion__container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.accordion__wrapper {
+    width: 800px;
+}
+
+.accordion__item--content-padding {
+    padding: 20px;
+}
+
+.accordion__item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.accordion__item--title {
+    padding: 10px;
+    background: #CD4631;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion__item--title:before {
+    position: absolute;
+    content: '+';
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+    font-size: 24px;
+}
+
+.accordion__item--content {
+    position: relative;
+    background: #F3F3F3;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.accordion__item.active .accordion__item--content {
+    height: 200px;
+}
+
+.accordion__item.active .accordion__item--title:before {
+    content: '-';
+}
+

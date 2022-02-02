@@ -7,10 +7,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1y5JBkoIxSIasuBa8FbZVErbJ2Z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,6 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -35,7 +47,11 @@
       <workItem from="1631535618708" duration="664000" />
       <workItem from="1631536313466" duration="221000" />
       <workItem from="1631536573822" duration="27000" />
-      <workItem from="1631536811893" duration="130000" />
+      <workItem from="1631536811893" duration="1089000" />
+      <workItem from="1631704758268" duration="1321000" />
+      <workItem from="1632227490147" duration="12944000" />
+      <workItem from="1632325382419" duration="1778000" />
+      <workItem from="1643639824155" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="asdad">
       <created>1631536513626</created>
@@ -44,7 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631536513626</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change id tab bar">
+      <created>1631537071863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631537071863</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change accordion">
+      <created>1632247812483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632247812483</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,6 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asdad" />
-    <option name="LAST_COMMIT_MESSAGE" value="asdad" />
+    <MESSAGE value="change id tab bar" />
+    <MESSAGE value="change accordion" />
+    <option name="LAST_COMMIT_MESSAGE" value="change accordion" />
   </component>
 </project>

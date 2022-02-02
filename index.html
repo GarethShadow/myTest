@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="Headder/header.css">
     <link rel="stylesheet" href="TicTacToe/TicTacToe.style.css">
     <link rel="stylesheet" href="TabBar/TabBar.style.css">
+    <link rel="stylesheet" href="Accordion/accordion.style.css">
+    <link rel="stylesheet" href="Slider/Slider.style.css">
 </head>
 <body>
 <div class="full__cotainer">
@@ -107,6 +109,8 @@
         <div class="tab-bar__nav">
             <button class="tab-bar__nav-btn" type="button" data-tab="#tab__to-do-list">TO DO LIST</button>
             <button class="tab-bar__nav-btn" type="button" data-tab="#tab__tic-tack-toe">TIC TACK TOE</button>
+            <button class="tab-bar__nav-btn" type="button" data-tab="#tab__accordion">ACCORDION</button>
+            <button class="tab-bar__nav-btn" type="button" data-tab="#tab__slider">SLIDER</button>
         </div>
         <div class="tab-bar__content">
             <div class="tab-bar__item" id="tab__to-do-list">
@@ -137,8 +141,10 @@
                 <div class="tic-tac-toe__section">
                     <h1>Tic-Tack-Toe</h1>
                     <div class="counter">
-                        <p class="counter__text">victories at the crosses: <span class="counter__win-crosses">0</span></p>
-                        <p class="counter__text">victories at the noughts: <span class="counter__win-noughts">0</span></p>
+                        <p class="counter__text">victories at the crosses: <span class="counter__win-crosses">0</span>
+                        </p>
+                        <p class="counter__text">victories at the noughts: <span class="counter__win-noughts">0</span>
+                        </p>
                         <div id="btn__clear-counter">Clear</div>
                         <div id="btn__new-game">Start new game</div>
                     </div>
@@ -165,8 +171,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="tab-bar__item " id="tab__accordion">
+                <!--    ACCORDIN -->
+                <div class="accordion__section">
+                    <h1>Accordion</h1>
+                    <div class="accordion__container">
+                        <div class="accordion__wrapper"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-bar__item " id="tab__slider">
+                <!--    SLIDER -->
+                <div class="accordion__section">
+                    <h1>Slider</h1>
+                    <div class="slider__wrapper">
+                        <div class="slider__container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 </div>
 
 
@@ -174,5 +203,7 @@
 <script src="ToDoList/ToDoList.js"></script>
 <script src="TicTacToe/TicTacToe.js"></script>
 <script src="TabBar/TabBar.js"></script>
+<script src="Accordion/accordion.js"></script>
+<script src="Slider/Slider.js"></script>
 </body>
 </html>
